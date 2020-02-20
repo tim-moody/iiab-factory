@@ -104,4 +104,4 @@ if latest_src not in dest_zim_list or args.force:
     os.system(cmd)
     cmd = "rsync -av " + src_dir + "/zims/index/" + latest_src + ".zim.idx "  + dest_dir + "index"
     print cmd
-    os.system(cmd)
+    # os.system(cmd) kiwix no longer uses external index
